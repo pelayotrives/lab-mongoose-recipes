@@ -53,6 +53,7 @@ mongoose.connect(MONGODB_URI)
   .then( (response) => {
     console.log("Success!")
     console.log("Sixth promise in process.")
+    console.log("Bye bye! Connection closing.")
     mongoose.connection.close()
   })
   .catch( (error) => {
